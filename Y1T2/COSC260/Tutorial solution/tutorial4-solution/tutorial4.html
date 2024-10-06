@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COSC260 - Tutorial 4</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" type="text/css" href="css/tutorial4.css">
+    <script src="js/validation.js"></script>
+</head>
+
+<body>
+    <div id="errors"></div>
+    <form action="" id="myform">
+        
+        <fieldset id="personal_information">
+            <legend>Personal information</legend>
+
+            <label for="">first name:</label>
+            <input type="text" name="first">
+            
+            <label for="">last name:</label>
+            <input type="text" name="last">
+
+            <label for="">email:</label>
+            <input type="text" name="email">
+
+            <label for="">mobile:</label>
+            <input type="text" name="mobile">
+        </fieldset>
+        
+        <fieldset id="enrolment_information">
+            <legend>Enrolment information</legend>
+            
+            <label for="">degree type: </label>
+            <select name="type" id="">
+                <option value="none">Select one</option>
+                <option value="bachelors">Bachelors</option>
+                <option value="masters">Masters</option>
+                <option value="phd">PhD</option>
+            </select>
+            <br>
+            <label for="">study mode:</label>
+            <input type="radio" name="mode" value="on" id="mode_on">on-campus
+            <input type="radio" name="mode" value="off" id="mode_off">off-campus
+        </fieldset>
+        
+        <input type="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+/* Global styles for the entire page */
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    height: 100%;
+    /* Set full height */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    /* Set up a flex layout */
+    flex-direction: column;
+    /* Align children vertically */
+    font-family: Arial, sans-serif;
+    /* Default font family */
+}
+
+/* Main content wrapper */
+#wrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    /* Arrange direct children in a row */
+    flex: 1 0 auto;
+    /* Let the wrapper grow and shrink, but don’t base it on its content size */
+}
+
+/* Navigation styles */
+nav {
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center align text */
+    border-bottom: 1px solid #000;
+    /* Bottom border */
+    background-color: greenyellow;
+    /* Background color */
+    padding: 2vw;
+    /* Padding based on viewport width */
+}
+
+/* Individual link styles in the navigation */
+nav a {
+    padding: 1vw;
+    font-size: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: white;
+}
+
+/* Active state for navigation links */
+nav a:active {
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+/* Individual container styles */
+#geekTestContainer,
+#animationContainer,
+#registrationContainer {
+    margin: 20px;
+    flex: 1;
+    /* Let these containers grow and occupy available space */
+}
+
+/* Specific styling for the animation container */
+#animationContainer {
+    text-align: center;
+    width: 350px;
+    height: 350px;
+}
+
+/* Hide animation and registration containers by default */
+#animationContainer,
+#registrationContainer {
+    display: none;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    color: #333;
+}
+
+/* Fieldset styles */
+fieldset {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #888;
+    color: #666;
+    border-radius: 5px;
+}
+
+/* Label styles */
+label {
+    margin: 10px;
+    color: #666;
+}
+
+/* Dropdown styles */
+select,
+option {
+    cursor: pointer;
+    font-size: 100%;
+    color: #666;
+}
+
+select {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Radio and checkbox styles */
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Hidden images inside specific containers */
+#nge img,
+#sg img,
+#wg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centering the image */
+    opacity: 0;
+    /* Fully transparent */
+}
+
+/* Active state of the hidden images */
+#nge img.active,
+#sg img.active,
+#wg img.active {
+    opacity: 1;
+    /* Fully opaque */
+}
+
+/* General image styles */
+img {
+    margin-top: 30px;
+    display: none;
+    /* Images hidden by default */
+    max-height: 300px;
+    max-width: 300px;
+    border: 2px solid #888;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    font-size: 100%;
+    bottom: 0;
+    width: 100%;
+    /* Full width */
+    clear: both;
+    /* Clear floated content, if any */
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background: #ff0000;
+    flex-shrink: 0;
+    /* Prevent the footer from shrinking */
+}

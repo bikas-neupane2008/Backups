@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "dbae1ba5-c34c-407e-b6e5-4ad878c3e5f1",
+		"name": "UNE A3 App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1961821"
+	},
+	"item": [
+		{
+			"name": "All Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/posts",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/posts/66c2fb8f456e626997038dbe",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"66c2fb8f456e626997038dbe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

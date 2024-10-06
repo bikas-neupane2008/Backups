@@ -1,0 +1,65 @@
+/* Styles for the 'up' button */
+b.up {
+    cursor: pointer;
+    /* Changes the cursor to a hand icon on hover */
+    float: right;
+    /* Floats the button to the right side */
+}
+
+/* Styles for the 'up' button on hover */
+b.up:hover {
+    color: #000;
+    /* Changes the color to black on hover */
+}
+
+/* Styles for the 'down' button */
+b.down {
+    cursor: pointer;
+    /* Changes the cursor to a hand icon on hover */
+    float: right;
+    /* Floats the button to the right side */
+}
+
+/* Styles for the 'down' button on hover */
+b.down:hover {
+    color: #000;
+    /* Changes the color to black on hover */
+}
+
+/* Styles for the container of the ranking elements */
+.rankContainer {
+    margin: 10px;
+    /* Adds space around the container */
+    position: relative;
+    /* Sets the position context for inner elements */
+    width: 225px;
+    /* Specifies the width */
+    height: auto;
+    /* Lets the height adjust based on content */
+    border: 1px #666 solid;
+    /* Sets a border around the container */
+    border-radius: 5px;
+    /* Adds rounded corners */
+    padding: 8px;
+    /* Adds space inside the container */
+}
+
+/* Styles for individual ranking elements */
+.rankElement {
+    position: relative;
+    /* Sets the position context for potential inner elements */
+    border-radius: 5px;
+    /* Adds rounded corners */
+    width: 200px;
+    /* Specifies the width */
+    height: auto;
+    /* Lets the height adjust based on content */
+    margin: 6px;
+    /* Adds space around each ranking element */
+    padding: 6px;
+    /* Adds space inside the ranking element */
+    background: #ccc;
+    /* Sets a gray background */
+    color: #666;
+    /* Sets a darker gray text color */
+}

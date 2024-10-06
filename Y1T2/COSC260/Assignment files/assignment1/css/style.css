@@ -1,0 +1,302 @@
+/* Styling for the body element */
+body {
+    min-width: 300px;
+    /* Ensures a minimum width for the body */
+    background-color: grey;
+    /* Sets the background color to grey */
+    cursor: context-menu;
+    /* Sets the cursor to context menu */
+}
+
+/* Styling for the navigation bar */
+nav {
+    width: 100%;
+    /* Sets the width of the navigation bar to 100% */
+    text-align: center;
+    /* Centers the navigation links */
+    border-bottom: 1px solid #000;
+    /* Adds a 1px black solid line at the bottom of the navigation bar */
+    background-color: greenyellow;
+    /* Sets the background color of the navigation bar to green yellow */
+    padding: 2vw;
+    /* Adds padding around the navigation links */
+}
+
+/* Styling for the navigation links */
+nav a {
+    padding-left: 2vw;
+    /* Adds left padding to the navigation links */
+    padding-right: 2vw;
+    /* Adds right padding to the navigation links */
+    font-size: 100%;
+    /* Sets the font size of the navigation links to 100% */
+    text-decoration: none;
+    /* Removes underlines from the navigation links */
+}
+
+/* Styling for unvisited and visited navigation links */
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    /* Removes underlines from unvisited and visited navigation links */
+    color: black;
+    /* Sets the text color of unvisited and visited navigation links to black */
+}
+
+/* Styling for the hover effect on navigation links */
+nav a:hover {
+    color: white;
+    /* Changes the text color of navigation links on hover to white */
+}
+
+/* Styling for the active state of navigation links (when clicked) */
+nav a:active {
+    text-decoration: underline;
+    /* Adds an underline to navigation links when clicked */
+    color: #0000ff;
+    /* Sets the text color of active navigation links to blue */
+}
+
+/* Styling for the header section */
+header {
+    text-align: center;
+    /* Centers the content in the header section */
+}
+
+/* Styling for the columns */
+.column {
+    font-family: Roboto, sans-serif;
+    /* Sets the font family for the columns */
+    color: #333;
+    /* Sets the text color of the columns to dark grey */
+    width: 100%;
+    /* Sets the width of the columns to 100% */
+    margin: 0 auto;
+    /* Centers the columns horizontally within their parent container */
+}
+
+/* Styling for the left and right columns */
+#left-column,
+#right-column {
+    float: none;
+    /* Resets any previous float property to none */
+    width: 100%;
+    /* Sets the width of the columns to 100% */
+    background-color: #f5f5f5;
+    /* Sets the background color of the columns to light grey */
+}
+
+/* Media query for screens with a minimum width of 600px (desktop screens) */
+@media (min-width: 600px) {
+
+    #left-column,
+    #right-column {
+        width: 50%;
+        /* Sets the width of the columns to 50% for a two-column layout on desktop screens */
+        float: left;
+        /* Floats the columns to create a two-column layout on desktop screens */
+        background-color: grey;
+        /* Sets the background color of the columns to grey on desktop screens */
+    }
+
+}
+
+/* Styling for the main heading (h1) */
+h1 {
+    font-family: sans-serif;
+    /* Sets the font family for the main heading */
+    font-size: 200%;
+    /* Sets the font size of the main heading to 200% of the default size */
+    font-weight: bold;
+    /* Sets the font weight of the main heading to bold */
+    margin: 10px;
+    /* Adds margin around the main heading */
+    padding: 10px;
+    /* Adds padding around the main heading */
+}
+
+/* Styling for subheadings (h2) */
+h2 {
+    font-family: sans-serif;
+    /* Sets the font family for subheadings */
+    font-size: 100%;
+    /* Sets the font size of subheadings to 100% of the default size */
+    font-weight: bold;
+    /* Sets the font weight of subheadings to bold */
+    font-style: italic;
+    /* Sets the font style of subheadings to italic */
+    margin: 10px;
+    /* Adds margin around subheadings */
+    padding: 10px;
+    /* Adds padding around subheadings */
+}
+
+/* Styling for strong tag */
+strong {
+    font-weight: bold;
+    /* Sets the font weight of bold text to bold */
+}
+
+/* Styling for the profile image */
+.profile-image {
+    float: left;
+    /* Floats the profile image to the left */
+    width: 50%;
+    /* Sets the width of the profile image to 50% of its container */
+    height: 50%;
+    /* Sets the height of the profile image to 50% of its container */
+    margin: 10px;
+    /* Adds margin around the profile image */
+    padding: 10px;
+    /* Adds padding around the profile image */
+}
+
+/* Styling for the hover effect on images */
+img:hover {
+    opacity: 0.5;
+    /* Reduces the opacity of images on hover to create a fade effect */
+}
+
+/* Styling for the "More" section, contact details section and about geek section */
+.more,
+.contact-details,
+.about-geek {
+    font-size: 100%;
+    /* Sets the font size to 100% */
+    clear: left;
+    /* Clears any floated elements to prevent overlapping */
+    margin: 10px;
+    /* Adds margin */
+    padding: 10px;
+    /* Adds padding */
+    color: black;
+    /* Sets the text color to black */
+}
+
+/* Styling for the "More" section */
+.more {
+    cursor: pointer;
+}
+
+/* Styling for bold text (b) */
+b {
+    font-weight: bold;
+    /* Sets the font weight of bold text to bold */
+}
+
+/* Styling for italic text (i) */
+i {
+    font-style: italic;
+    /* Sets the font style of italic text to italic */
+}
+
+/* Styling for underlined text (u) */
+u {
+    text-decoration: underline;
+    /* Sets underlined text to have an underline decoration */
+}
+
+/* Styling for the description section */
+.description {
+    font-family: sans-serif;
+    /* Sets the font family for the description section */
+    font-size: 100%;
+    /* Sets the font size of the description section to 100% */
+    margin: 10px;
+    /* Adds margin around the description section */
+    padding: 10px;
+    /* Adds padding around the description section */
+}
+
+/* Styling for the lists of relationships, hobbies, romantic activities, and Valentine's gift */
+.relationships-types-list li,
+.hobbies-list li,
+.romantic-activities-list li,
+.valentines-gift-list li {
+    list-style-type: lower-roman;
+    /* Sets the list style type to lower-roman (i, ii, iii, etc.) */
+    margin: 20px;
+    /* Adds margin around the list items */
+    padding: 10px;
+    /* Adds padding around the list items */
+    border: 1px solid #ccc;
+    /* Adds a 1px solid border around the list items */
+}
+
+/* Styling for unordered lists (ul) */
+ul li {
+    list-style-type: square;
+    /* Sets the list style type to square */
+    margin: 20px;
+    /* Adds margin around the list items */
+    padding: 10px;
+    /* Adds padding around the list items */
+    border: 2px solid #ccc;
+    /* Adds a 2px solid border around the list items */
+}
+
+/* Styling for the lists of favorite TV shows and games */
+.favorites-tv-list li,
+.favorites-games-list li {
+    list-style-type: disc;
+    /* Sets the list style type to disc */
+    margin: 20px;
+    /* Adds margin around the list items */
+    padding: 10px;
+    /* Adds padding around the list items */
+    border: 2px solid #ccc;
+    /* Adds a 2px solid border around the list items */
+}
+
+/* Styling for nested lists */
+.nested-list li {
+    list-style-type: lower-roman;
+    /* Sets the list style type to lower-roman for nested lists */
+    margin: 20px;
+    /* Adds margin around the list items */
+    padding: 10px;
+    /* Adds padding around the list items */
+    border: 1px solid #ccc;
+    /* Adds a 1px solid border around the list items */
+}
+
+/* Styling for unvisited and visited links */
+a:link,
+a:visited {
+    text-decoration: none;
+    /* Removes underlines from unvisited and visited links */
+    color: black;
+    /* Sets the text color of unvisited and visited links to black */
+}
+
+/* Styling for the hover effect on links */
+a:hover {
+    text-decoration: underline;
+    /* Adds an underline to links on hover */
+    color: #0c097a;
+    /* Sets the text color of links on hover to a dark blue shade */
+}
+
+/* Styling for active links (when clicked) */
+a:active {
+    text-decoration: underline;
+    /* Adds an underline to active links */
+    color: #0000ff;
+    /* Sets the text color of active links to blue */
+}
+
+/* Styling for the footer section */
+footer {
+    font-size: 100%;
+    /* Sets the font size of the footer section to 100% */
+    clear: both;
+    /* Clears any floated elements to prevent overlapping */
+    margin-left: -20px;
+    /* Moves the footer slightly to the left to align with the content */
+    padding: 10px;
+    /* Adds padding around the footer section */
+    text-align: center;
+    /* Centers the content in the footer section */
+    background: #ff0000;
+    /* Sets the background color of the footer to red */
+}

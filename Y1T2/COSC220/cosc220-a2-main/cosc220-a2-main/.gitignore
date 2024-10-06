@@ -1,0 +1,10 @@
+# This file tells git what files to "ignore"
+# Typically, these are all the generated files (as we only commit source code, not binary output)
+
+.gradle/
+.idea/
+build/
+
+.vscode
+bin/
+.openvscode-server/

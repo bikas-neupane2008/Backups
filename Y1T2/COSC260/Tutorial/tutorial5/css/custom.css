@@ -1,0 +1,28 @@
+/* Button images */
+.button {
+  display: block;
+  background-image: url(../img/button_down.png);
+  cursor: pointer;
+}
+
+/* Fading image slider */
+#slide_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#slide_img img.active {
+  opacity: 1;
+}
+
+/* Fading text slider */
+#slide_info div {
+  position: absolute;
+  opacity: 0.0;
+}
+
+#slide_info div.active {
+  opacity: 1.0;
+}

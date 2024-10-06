@@ -1,0 +1,63 @@
+.button {
+    display: block;
+    cursor: pointer;
+}
+
+.button_left {
+    background-image: url(../img/button_left.png);
+}
+.button_right {
+    background-image: url(../img/button_right.png);
+}
+.button_down {
+    background-image: url(../img/button_down.png);
+}
+.button_up {
+    background-image: url(../img/button_up.png);
+}
+
+#student_photos {
+    margin: 0px auto;
+}
+#student_photos img {
+    width: 490px;
+}
+#student_photos div, img{
+    margin: auto 5px;
+    float: left;
+}
+
+.photo_visible {
+    display: block;
+}
+
+.photo_hidden {
+    display: none;
+}
+
+.button_disabled{
+    filter: grayscale(100%);
+    cursor: default;
+}
+
+ 
+/* Fading image slider*/
+#slide_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.0;
+}
+
+#slide_img img.active {
+    opacity: 1.0;
+}
+/* Fading text slider  */
+#slide_info div {
+    position: absolute;
+    opacity: 0.0;
+}
+
+#slide_info div.active {
+    opacity: 1.0;
+}

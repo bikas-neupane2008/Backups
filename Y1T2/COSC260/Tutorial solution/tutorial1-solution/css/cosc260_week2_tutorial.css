@@ -1,0 +1,112 @@
+/* element selectors */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+/* element classes */
+.content {
+    border-bottom: 1px solid #000;
+    padding: 20px 10px 20px 10px;
+}
+
+/* specific elements by id */
+#wrapper {
+    width: 80%;
+    border: 2px solid #000;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+}
+
+#logo {
+    background-color: #669900;
+    border-bottom: 1px solid #000;
+}
+
+#nav ul {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    background-color: #a6a6a6;
+    margin: 0;
+    padding: 15px 0px 15px 0px;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav li a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+#nav li a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#nav li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#nav li a:hover {
+    background-color: #669900;
+    color: white;
+}
+
+#topics ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+#textbook img:hover {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+#assessment h3:last-of-type {
+    margin-top: 15px;
+}
+
+#footer {
+    height: 5%;
+    padding: 10px;
+    background-color: #669900;
+    text-align: center;
+}
+#assessment h3::first-letter, h4::first-letter {
+    font-size: 125%;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta information -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Seek A Geek - Geek Registration Test">
+  <meta name="keywords" content="SeekAGeek, Seek, Geek, Registration, Test">
+  <meta name="author" content="Bikash Neupane - bneupan2@myune.edu.au">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/your_custom_1.css">
+  <link rel="stylesheet" href="css/your_custom_2.css">
+
+  <!-- Javascript Libraries and Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/rank.js"></script>
+  <script src="js/geek_test.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/registration_validation.js"></script>
+  <script src="js/timer.js"></script>
+
+  <!-- Fallback for older versions of Internet Explorer -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  <title>Seek A Geek - Geek Registration Test</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav id="nav">
+    <a href="a2.html">Home</a>
+    <a href="#" onclick="alert('Page under construction'); return false;">Profile</a>
+    <a href="#geekTestForm">Register</a>
+    <a href="#" onclick="alert('Page under construction'); return false;">Chat</a>
+    <a href="#footer">Bottom</a>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <div id="wrapper">
+
+    <!-- Geek Test Form Container -->
+    <div id="geekTestContainer">
+      <form id="geekTestForm">
+        <fieldset>
+          <legend>Test Information</legend>
+          <header>
+            <h1>
+              <u>SeekAGeek Evaluation Test</u>
+            </h1>
+          </header>
+
+          <!-- Questions for the Geek Test -->
+
+          <!-- Question 1 -->
+          <label>Do you wear glasses?</label>
+          <input type="radio" name="glasses" value="yes" id="glasses_yes">Yes
+          <input type="radio" name="glasses" value="no" id="glasses_no" checked>No
+          <br>
+
+          <!-- Question 2 -->
+          <label>Which of the following do you drink most often?</label>
+          <select name="drink">
+            <option value="none" selected>None</option>
+            <option value="blue_v">Blue V</option>
+            <option value="coffee">Coffee</option>
+            <option value="tea">Tea</option>
+          </select>
+          <br>
+
+          <!-- Question 3 -->
+          <label>Which best fits your idea of a romantic outing?</label>
+          <select name="outing">
+            <option value="french_meal">Sharing a meal at a French restaurant</option>
+            <option value="star_wars">Attending a Star Wars convention</option>
+            <option value="apple_store">Visiting the Apple Store</option>
+            <option value="subway_meal">Sharing a Subway meal</option>
+            <option value="cinema">Going to the cinema</option>
+          </select>
+          <br>
+
+          <!-- Question 4 -->
+          <label>Position the attributes of your dream match (from most to least appealing)</label>
+          <br>
+          <div class="rankContainer">
+            <div class="rankElement" id="el0">
+              <input type="hidden" name="0" value="0">
+              Robotic voice
+              <b class="down">&nbsp;∨</b>
+              <b class="up">∧&nbsp;</b>
+            </div>
+            <div class="rankElement" id="el1">
+              <input type="hidden" name="1" value="1">
+              High-index lenses
+              <b class="down">&nbsp;∨</b>
+              <b class="up">∧&nbsp;</b>
+            </div>
+            <div class="rankElement" id="el2">
+              <input type="hidden" name="2" value="2">
+              Socially awkward
+              <b class="down">&nbsp;∨</b>
+              <b class="up">∧&nbsp;</b>
+            </div>
+            <div class="rankElement" id="el3">
+              <input type="hidden" name="3" value="3">
+              Fit and healthy
+              <b class="down">&nbsp;∨</b>
+              <b class="up">∧&nbsp;</b>
+            </div>
+            <div class="rankElement" id="el4">
+              <input type="hidden" name="4" value="4">
+              Whitened teeth
+              <b class="down">&nbsp;∨</b>
+              <b class="up">∧&nbsp;</b>
+            </div>
+          </div>
+          <br>
+
+          <!-- Question 5 -->
+          <label>Which of the following shows have you watched?</label>
+          <br>
+          <input type="checkbox" name="watched" value="big_bang_theory" id="big_bang_theory">The Big Bang Theory
+          <input type="checkbox" name="watched" value="mandalorian" id="mandalorian">The Mandalorian
+          <input type="checkbox" name="watched" value="battlestar" id="battlestar">Battlestar Galactica
+          <input type="checkbox" name="watched" value="breaking_bad" id="breaking_bad">Breaking Bad
+          <input type="checkbox" name="watched" value="cosc120" id="cosc120">COSC120 Lectures and Tutorials
+          <input type="checkbox" name="watched" value="last_of_us" id="last_of_us">The Last of Us
+          <br>
+        </fieldset>
+
+        <!-- Submit button for the test form -->
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <!-- Animation Container -->
+    <div id="animationContainer">
+      <p id="scoreText"></p><br>
+      <p id="message"></p>
+      <div id="nge">
+        <img class="active" src="img/not_geeky_enough_option_1.png" alt="Not Geeky Enough 1">
+      </div>
+      <div id="sg">
+        <img class="active" src="img/super_geek_option_1.png" alt="Super Geek 1">
+      </div>
+      <div id="wg">
+        <img class="active" src="img/welcome_geek_option_1.png" alt="Welcome Geek 1">
+      </div>
+    </div>
+
+    <!-- Geek Registration Form Container -->
+    <div id="registrationContainer">
+      <form id="registrationForm">
+        <fieldset>
+          <legend>Registration Form</legend>
+          <header>
+            <h1>
+              <u>SeekAGeek Registration</u>
+            </h1>
+          </header>
+
+          <!-- Geek Registration Form Details -->
+          <label>Full Name: </label><input type="text" name="fullName" placeholder="Full Name">
+          <br>
+          <label>Age: </label><input type="number" name="age" min="18" max="130" placeholder="18 to 130">
+          <br>
+          <label>Email: </label><input type="email" name="email" placeholder="e.g., xxx@xx.xx">
+          <br>
+          <label>Phone number (optional): </label><input type="text" name="phone" maxlength="10"
+            placeholder="e.g., 0412345678">
+          <br>
+        </fieldset>
+
+        <!-- Submit button for the registration form -->
+        <input type="submit" value="Register">
+      </form>
+    </div>
+  </div>
+
+  <!-- Page Footer -->
+  <footer id="footer">
+    <p><a href="#nav">Back to top</a><br>
+      <strong>&copy; Bikash Neupane &hearts; 2023</strong>
+    </p>
+    <p></p>
+  </footer>
+</body>
+
+</html>

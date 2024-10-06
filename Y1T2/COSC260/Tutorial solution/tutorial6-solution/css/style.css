@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #E9E8E6;
+}
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #7d5177;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 5px;
+}
+h2 {
+  font-size: 30px; 
+  text-align: center;
+}
+h3 {
+  font-size: 24px; 
+}
+h4 {
+  font-size: 18px; 
+}
+i {
+  font-style: italic;
+}
+b {
+  font-weight: bold;
+}
+ol li {
+  list-style-position: inside;
+}
+#wrapper {
+  width: 1020px;
+  margin: auto;
+}
+.column {
+  float: left;
+  background-color: #fff; 
+}
+nav {
+  width: 180px;
+  text-align: center;
+  padding: 0;
+}
+nav img {
+  display: block;
+  margin: auto;
+}
+nav a {
+  display: block;
+  font-size: 18px;
+  line-height: 2;
+  text-decoration: none;
+  border-bottom: 1px solid #d9d9d9;
+}
+nav a:link {
+  text-decoration: none;
+  color: #000;
+}
+nav a:visited {
+  text-decoration: none;
+  color: #000;
+}
+nav a:hover {
+  background-color: #7d5177;
+  color: #fff;
+}
+article li {
+  list-style-type: upper-roman;
+}
+article section:last-of-type li {
+  list-style-type: square;
+}
+#col_mid section {
+  padding-top: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+#col_mid section:last-of-type {
+  border-bottom: none;
+}
+section article {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#col_mid {
+        width: 600px;
+        margin: 0 20px;
+        padding: 0px 10px;
+    }
+#col_right {
+  text-align: center;
+  width: 150px;
+  margin: 0px;
+  padding: 0 10px;
+}
+#col_right figure {
+  display: block;
+  margin: auto;
+  padding-top: 10px
+}
+#col_right img {
+  display: block;
+  margin: auto;
+}
+footer {
+  width: 1010px;
+  width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
+  background-color: #96c03d;
+}
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+}
+legend {
+  font-weight: bold;
+}
+form {
+  margin-bottom: 10px
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+  background-color: #d9d9d9;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px 0px;
+}
+/* LAYOUT */
+#unit_info {
+  border-top: 1px solid #d9d9d9;
+}
+article section {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 10px;
+}
+article section div{
+  display: none;
+}
+article h2 {
+  color: #7d5177; 
+}
+article section h3 {
+  display: block;
+  float: left;
+  clear: both;
+}
+article section > div:last-of-type {
+  clear: both;
+}
+#col_right section:first-of-type {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9; 
+}
+#col_right h2 {
+  color: #7d5177; 
+  font-size: 24px;
+}
+#col_right h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+#col_right section:last-of-type {
+ margin-top: 10px;
+}
+#col_right > section > div:last-of-type{
+  display: none;
+}
+
+
+/* Just for tutorial */
+#slide_img img {
+    position: absolute;
+    opacity: 0.0;
+}
+
+#slide_info div {
+    position: absolute;
+    opacity: 0.0;
+}
+/*--------------------------------------*/
+
+/* Basic styling for slideshow section */
+#slideshow {
+  position: relative;
+  width: 600px;
+  height: 360px;
+  margin-top: 10px;
+}
+
+/* Basic styling for the slideshow buttons */
+.button {
+  display: none;
+  float: left;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+#col_right .button {
+    float: none;
+    margin-bottom: 10px;
+}
+
+/* Styling for the slideshow text */
+#slide_info {
+  position: relative;
+  width: 250px;
+  height: 360px;
+  top: 0;
+  left: 325px;
+}
+/* END SLIDESHOW CSS */
+
+
+
+

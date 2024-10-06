@@ -1,0 +1,12 @@
+#errors {
+    color: darkred;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+#personal_information input {
+    display: block;
+    margin-bottom: 5px;
+}
